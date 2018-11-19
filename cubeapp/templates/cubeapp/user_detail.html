@@ -16,8 +16,8 @@
 	</tr>
 </table>
 <h2>Alphabet prefrences</h2>
-{% if illegalletters.count != 0 %}
-	
+{% if illegalletters %}
+
 <table class="table table-bordered">
 	{% for illegalletter in illegalletters %}
 	<tr class="table-{% if illegalletter.replace != '' %}warning{% else %}danger{% endif %}">
